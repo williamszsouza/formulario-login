@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-image: linear-gradient(90deg,#2e365a, #6c5e82, #ad91a7, #d0787f);
+}
+
+
+h6{
+    text-align: center;
+    font-weight:bold;
+    font-size:medium
+}
+
+.esquerda{
+
+    background-color: rgba(255, 255, 255, 0.101);
+    padding: 30px;
+    text-align: justify;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px  rgb(88, 87, 87);
+    width: 250px;
+}
+
+
+.textfield,h6{
+
+    display: flex;
+    flex-direction:column;
+    color: #ffffff;
+}
+
+
+.textfield>input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px;
+    color: #3f5b8b;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius:5px;
+    transition: ease-in-out 0.4s;
+    width:max-content;
+
+}
+.direita{
+    padding: 20px;
+    text-transform: uppercase;
+   color: #ffffff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.textfield>label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #2c3f60;
+    color: #ffffff;
+}
+
+.textfield>input:hover{
+    background-color: #c0bdbd;
+}
+label,button{
+    cursor: pointer;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+h4{
+    font-size: 50px;
+    text-shadow: 1px 1px 10px rgb(41, 40, 40);
+}
+h6{
+    font-size: 30px;
+    margin: 0;
+    border: 0;
+    padding-top: 40px;
+}
+
+img  {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
